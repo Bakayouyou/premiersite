@@ -1,0 +1,353 @@
+/* font dl */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Rowdies&display=swap');
+
+* {
+    font-family: "Raleway", sans-serif;
+}
+
+:root {
+    --blue: #0065FC;
+    --light-blue: #DEEBFF;
+    --grey: #F2F2F2;
+}
+
+/* General */
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    margin: 0 50px 50px;
+}
+
+.flex {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* header*/
+header {
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+logo {
+    margin-top: 30px;
+    flex: 1;
+}
+
+nav li {
+    padding-top: 35px;
+}
+
+nav a {
+    padding: 35px 30px 0;
+}
+
+nav li a:hover {
+    color: var(--blue);
+    border-top: 4px solid var(--blue);
+    padding: 2rem;
+}
+
+/*search bar*/
+.search {
+    margin-bottom: 30px;
+}
+
+.search h2 {
+    margin-bottom: 10px;
+}
+
+.search p {
+    margin-top: 10px;
+}
+
+.searchbar {
+    margin-bottom: 30px;
+    height: 50px;
+}
+
+.containermarker {
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+    width: 50px;
+    flex-shrink: 0;
+}
+
+.containermarker i {
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+.searchinput {
+    border: 1px solid #F2F2F2;
+    padding: 0 0 0 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 220px;
+    height: 50px;
+}
+
+.searchbutton {
+    background-color: var(--blue);
+    width: 130px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    padding: 0;
+    height: 50px;
+}
+
+.searchbutton i {
+    display: none;
+}
+
+/* filters */
+.filterlist {
+    flex-wrap: wrap;
+}
+
+.textfilter {
+    align-self: center;
+}
+
+.filters {
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.filter {
+    height: 46px;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+    align-items: center;
+    /*border-left: none;*/
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
+.filter span {
+    padding-left: 12px;
+}
+
+.filter:hover {
+    color: var(--blue);
+    border-color: var(--blue);
+    cursor: pointer;
+}
+
+.iconfilter {
+    background-color: var(--light-blue);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    right: 1px;
+}
+
+.iconfilter i {
+    margin: auto;
+    color: var(--blue);
+}
+
+.iconinfo {
+    border: 1px solid #F2F2F2;
+    border-radius: 1rem;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.iconinfo i {
+    margin: auto;
+    font-size: .9rem;
+    color: var(--blue);
+}
+
+/* hotel*/
+.hotels,
+.popular {
+    background-color: var(--grey);
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.hotels {
+    flex: 2;
+}
+
+.hotelstab {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 30px;
+    margin: 30px 0 50px;
+}
+
+.hotelframe {
+    display: grid;
+    grid-template-rows: 1fr 40%;
+    box-sizing: border-box;
+    box-shadow: 0 0 7px #c1c1C1;
+    height: 220px;
+    border: 5px solid #FFF;
+    border-radius: 15px;
+}
+
+.hotelframe img {
+    width: 100%;
+    height: 126px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.hotelname {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.hoteldescription p {
+    margin: 0;
+}
+
+.hoteldescription {
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 5px 10px;
+}
+
+.bluestar {
+    color: var(--blue);
+}
+
+.greystar {
+    color: var(--grey);
+}
+
+/* popular*/
+.popular {
+    flex: 1;
+    margin-left: 3%;
+}
+
+.popularicon {
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.popularframe {
+    height: 145px;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 7px #c1c1c1;
+    box-sizing: border-box;
+}
+
+.populartab {
+    display: grid;
+    gap: 30px;
+}
+
+.popularframe img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 0px 0px 15px;
+    ;
+}
+
+.populardescription {
+    flex: 1;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.titre p {
+    margin: 10px 0px 10px 0;
+}
+
+/* activites*/
+.activites {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+}
+
+.activitestab {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 2rem;
+}
+
+.activityframe {
+    display: grid;
+    grid-template-rows: 1fr 50px;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 0 0 7px #c1C1C1;
+}
+
+.activityframe img {
+    border-radius: 15px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card1 {
+    grid-column: 1/2;
+    grid-row: 1/13;
+}
+
+.card2 {
+    grid-column: 2/3;
+    grid-row: 1/6;
+}
+
+.card3 {
+    grid-column: 2/3;
+    grid-row: 7/13;
+}
+
+.card4 {
+    grid-column: 3/4;
+    grid-row: 1/13;
+}
+
+.card5 {
+    grid-column: 4/5;
+    grid-row: 1/6;
+}
+
+.card6 {
+    grid-column: 4/5;
+    grid-row: 7/13;
+}
+
+.activitydescription {
+    background-color: #fff;
+    align-self: center;
+    font-size: 1.1rem;
+    padding-left: 10px;
+    font-weight: 700;
+}
